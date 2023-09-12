@@ -4,7 +4,7 @@ const ProductManager = require("./ProductManager");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const productManager = new ProductManager("productos.json"); // Cambia el nombre del archivo si es necesario
+const productManager = new ProductManager("./productos.json");
 
 app.get("/products", async (req, res) => {
   try {
